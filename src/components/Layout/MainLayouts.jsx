@@ -1,10 +1,14 @@
 import React from "react";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 
-const MainLayouts = () => {
+const MainLayouts = ({ children }) => {
   return (
-    <div>
+    <>
+      <Header />
       <main className="min-h-[70vh]">{children}</main>
-    </div>
+      <Footer />
+    </>
   );
 };
 
